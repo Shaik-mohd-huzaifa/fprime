@@ -34,7 +34,7 @@ pip install --upgrade fprime-tools fprime-gds
 
 For full installation instructions, including virtual environment creation and installation verification, see [INSTALL.md](./docs/INSTALL.md).
 
-## Example Deployments
+> ## Example Deployments
 
 F´ comes with two example deployments. The deployments represent working F´ applications to help you understand F´. You can use these examples for reference, or clone them to start a new project.
 
@@ -64,35 +64,35 @@ The F´ community GitHub Organization contains third party contributions, more d
 
 You can open issues with this repository at: [https://github.com/nasa/fprime/issues](https://github.com/nasa/fprime/issues)
 
-## F´ Features
+> ## F´ Features
 
 F´ has the following key features that enable robust embedded system design.
 
-### Reusability
+> ### Reusability
 
 F´'s component-based architecture enables a high degree of modularity and software reusability.
 
-### Rapid Deployment
+> > ### Rapid Deployment
 
 F´ provides a complete development ecosystem, including modeling tools, testing tools, and a ground data system. Developers use the modeling tools to write high-level specifications, automatically generate implementations in C++, and fill in the implementations with domain-specific code. The framework and the code generators provide all the boilerplate code required in an F´ deployment, including code for thread management, code for communication between components, and code for handling commands, telemetry, and parameters. The testing tools and the ground data system simplify software testing, both on workstations and on flight hardware in the lab.
 
-### Portability
+> ### Portability
 
 F´ runs on a wide range of processors, from microcontrollers to multicore computers, and on several operating systems. Porting F´ to new operating systems is straightforward.
 
-### High Performance
+> ### High Performance
 
 F´ utilizes a point-to-point architecture. The architecture minimizes the use of computational resources and is well suited for smaller processors.
 
-### Adaptability
+> ### Adaptability
 
 F´ is tailored to the level of complexity required for small missions. This makes F´ accessible and easy to use while still supporting a wide variety of missions.
 
-### Analyzability
+> ### Analyzability
 
 The typed port connections provide strong compile-time guarantees of correctness.
 
-## F´ Release Notes
+> ## F´ Release Notes
 
 ### Release 2.0: Release and Migration Notes
 
@@ -131,22 +131,22 @@ Migration considerations:
 * `fprime-util generate --ut -DFPRIME_ENABLE_FRAMEWORK_UTS=OFF` will be removed in favor of future `fprime-util check` variants
 * `Autocoders/MagicDrawCompPlugin` will be removed in a near-term release
 
-### Release 1.0
+> ### Release 1.0
 
 * This is the initial release of the software to open source. See the license file for terms of use.
 
-### Release 1.01
+> ### Release 1.01
 
 * Updated contributor list. No code changes.
 
-### Release 1.1
+> ### Release 1.1
 
 * Created a Raspberry Pi demo. Read about it [here](RPI/README.md)
 * Added a tutorial [here](docs/Tutorials/README.md)
 * Updated Svc/BufferManager with bug fix
 * Fixed a bunch of shell permissions
 
-### Release 1.2
+> ### Release 1.2
 
 * Better MagicDraw Plugin
 * Prototype CMake build system. See: [CMake Documentation](./docs/UsersGuide/cmake/cmake-intro.md)
@@ -158,7 +158,7 @@ Migration considerations:
 * Purged inaccurate ITAR and Copyright notices
 * Misc. bug fixes
 
-### Release 1.3
+> ### Release 1.3
 
 * New prototype HTML GUI
 * Python packages Fw/Python and Gds
@@ -167,7 +167,7 @@ Migration considerations:
 * Integration test API
 * Baremetal components
 
-### Release 1.4
+> ### Release 1.4
 
 * Ref app no longer hangs on Linux exit
 * GDS improvements:
@@ -186,7 +186,7 @@ Migration considerations:
 * Updated CmdSequencer
   * Uses new MemAllocator interface
 
-### Release 1.5
+> ### Release 1.5
 
 * Documentation improvements
   * New user's guide containing considerable content: [https://nasa.github.io/fprime/UsersGuide/guide.html](https://nasa.github.io/fprime/UsersGuide/guide.html)
